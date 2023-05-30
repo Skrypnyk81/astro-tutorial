@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const pageTitle = "About Me";
 const identity = {
   firstName: "Yuriy",
@@ -18,9 +19,7 @@ const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+
 
 <html lang="en">
 	<head>
@@ -42,6 +41,7 @@ const textCase = "uppercase";
 		  </style>
 	</head>
 	<body>
+		<Navigation />
 		<ul>
 			<h1>{pageTitle}</h1>
         <h2>Mi chaimo {identity.firstName}, sto sperimentando un pò di programmare il fontend</h2>
